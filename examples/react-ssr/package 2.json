@@ -1,0 +1,34 @@
+{
+  "name": "effector-react-ssr",
+  "private": true,
+  "author": "Zero Bias",
+  "scripts": {
+    "start": "node dist/server",
+    "build:server": "npx parcel build -t node -d dist/server -o index.js src/server.tsx",
+    "build:client": "npx parcel build -d dist/client src/index.html",
+    "build": "yarn build:server && yarn build:client"
+  },
+  "dependencies": {
+    "cross-fetch": "^3.0.4",
+    "effector": "^20.13.5",
+    "effector-react": "^20.6.3",
+    "history": "^4.10.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-0",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-typescript": "^7.7.2",
+    "@types/node": "^12.12.7",
+    "express": "^4.17.1",
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^3.7.2"
+  },
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 Firefox versions",
+    "last 2 Safari versions"
+  ],
+  "license": "MIT"
+}
